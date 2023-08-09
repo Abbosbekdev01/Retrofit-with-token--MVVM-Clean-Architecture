@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/authScreen">
+
+
+    <fragment
+        android:id="@+id/authScreen"
+        android:name="uz.abbosbek.codialtaskmusobaqa.presenter.page.mainpage.AuthScreen"
+        android:label="fragment_auth_screen"
+        tools:layout="@layout/fragment_auth_screen" >
+        <action
+            android:id="@+id/action_authScreen_to_adminDiscountFragment"
+            app:destination="@id/adminDiscountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminDiscountFragment"
+        android:name="uz.abbosbek.codialtaskmusobaqa.presenter.page.adminDiscountPage.AdminDiscountFragment"
+        android:label="fragment_admin_discount"
+        tools:layout="@layout/fragment_admin_discount" />
+
+</navigation>
